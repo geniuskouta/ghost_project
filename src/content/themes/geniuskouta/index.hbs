@@ -2,3 +2,10 @@
     <h1>{{ @blog.title }}</h1>
     <div>{{ @blog.description }}</div>
 </header>
+
+<main>
+    {{!-- For each one of the posts, display the title  --}}
+    {{#foreach posts}}
+        <div>{{title}}</div>
+    {{/foreach}}
+</main>
