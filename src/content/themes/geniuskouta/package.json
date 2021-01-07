@@ -1,0 +1,17 @@
+{
+    "name": "geniuskouta",
+    "description": "my custom theme",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "author": {
+        "name": "geniuskouta",
+        "email": "knakano95@gmail.com",
+        "url": "https://geniuskouta.com"
+    },
+    "config": {
+        "posts_per_page": 25
+    }
+}
