@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "ghost-cli": "^1.15.3"
+  },
+  "dependencies": {
+    "roboto-fontface": "^0.10.0"
   }
 }

@@ -1,13 +1,13 @@
-<header>
-    <h1>{{ @blog.title }}</h1>
-    <div>{{ @blog.description }}</div>
-</header>
-
+{{!< default }}
 <main>
     {{!-- For each one of the posts, display the title  --}}
+    <ul>
     {{#foreach posts}}
-        <div>{{title}}</div>
+        <li>
+            <a href="{{url}}">{{title}}</a>
+        </li>
     {{/foreach}}
+    </ul>
 </main>
 
 {{!-- pagination block  --}}
