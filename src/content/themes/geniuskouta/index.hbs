@@ -1,14 +1,13 @@
 {{!< default }}
-<main>
+<main class="common-paper">
     {{!-- For each one of the posts, display the title  --}}
-    <ul>
+    <ul class="common-post-list">
     {{#foreach posts}}
-        <li>
+        <li class="common-post-list-item">
             <a href="{{url}}">{{title}}</a>
         </li>
     {{/foreach}}
     </ul>
+    {{!-- pagination block  --}}
+    {{pagination}}
 </main>
-
-{{!-- pagination block  --}}
-{{pagination}}
