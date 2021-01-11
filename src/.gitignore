@@ -1,3 +1,4 @@
 current/
 versions/
-content/logs/
+content/*
+!content/themes/
