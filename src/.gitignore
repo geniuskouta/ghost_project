@@ -3,3 +3,4 @@ current/
 versions/
 content/*
 !content/themes/
+!content/settings
