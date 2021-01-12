@@ -1,15 +1,18 @@
 .common-root {
     font-family: 'Roboto', sans-serif;
     background-color: #dfe6e9;
-    padding-top: 92px; /* header height + distance to the content */
+    padding: 92px 18px 30px; /* header height + distance to the content */
 }
 
 .common-header {
     background: #333333;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     padding: 12px 20px;
+    z-index: 2000;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .common-header-brand-title, .common-header-brand-description {
@@ -32,8 +35,9 @@
     background-color: #ffffff;
     max-width: 820px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .common-post-list {

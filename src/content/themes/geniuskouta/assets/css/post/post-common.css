@@ -1,3 +1,29 @@
-h1 {
+/*
+* direct html selectors are
+* for blog content styling only!
+*/
+
+img {
+    max-width: 100%;
+}
+
+/*
+* post-common-* styles
+* (template markup specific styles)
+*/
+
+.post-common-title {
+    color: #333333;
+    font-size: 24px;
     font-weight: bold;
+    line-height: 32px;
+    border-left: 6px solid #2c3e50;
+    padding-left: 8px;
+}
+
+.post-common-content {
+    color: #333333;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 18px;
 }
