@@ -1,8 +1,9 @@
 routes:
   /campaign/: campaign
+  /: about
 collections:
-  /:
-    permalink: /{slug}/
+  /blog/:
+    permalink: /blog/{slug}/
     template: index
 
 taxonomies:
