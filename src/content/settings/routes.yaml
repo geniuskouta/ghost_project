@@ -1,6 +1,5 @@
 routes:
-  /campaign/: campaign
-  /: about
+  /: campaign
 collections:
   /blog/:
     permalink: /blog/{slug}/
