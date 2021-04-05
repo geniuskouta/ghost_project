@@ -5,38 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tensaku JP</title>
     <link rel="stylesheet" href="{{asset "css/reset.css"}}" />
-    <link rel="stylesheet" href="{{asset "css/campagin/campaign.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/campaign/campaign.css"}}" />
+    <title>Tensaku JP</title>
 </head>
 <body>
-    <header class="campagin-header">
-        <div class="campagin-header-brand">Tensaku JP</div>
-        <nav class="campagin-header-nav">
-            <ul>        
-                <a href="#service" class="campagin-header-nav-link">
-                    Service
-                </a>
-                <a href="#plans" class="campagin-header-nav-link">
-                    Plans
-                </a>
-                <a href="#about" class="campagin-header-nav-link">
-                    About us
-                </a>
+    <header class="campaign-header">
+        <div class="campaign-header-brand">Tensaku JP</div>
+        <img src="{{asset "img/menu_FF7F50_24dp.svg"}}" class="campaign-header-nav-menu-icon" alt="" />
+        <nav class="campaign-header-nav">
+            <img src="{{asset "img/close_black_24dp.svg"}}" class="campaign-header-nav-close-icon" alt="" />
+            <ul class="campaign-header-nav-link-list">
+                <li class="campaign-header-nav-link-list-item">
+                    <a href="#service" class="campaign-header-nav-link">
+                        Service
+                    </a>
+                </li>
+                <li class="campaign-header-nav-link-list-item">
+                    <a href="#plans" class="campaign-header-nav-link">
+                        Plans
+                    </a>
+                </li>
+                <li class="campaign-header-nav-link-list-item">
+                    <a href="#about" class="campaign-header-nav-link">
+                        About us
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <article>
             <h1 class="campaign-hero-title">Improve your Japanese Writing</h1>
-            <div class="campagin-feedback-sample-card">
-                <div class="campaign-feedback-sample-card-sentence">
-                    今日は私がしばらく過ごした中で最高の日でした。<img alt="" />
-                </div>
-                <div class="campaign-feedback-sample-card-sentence">
-                    今日は<span>しばらくぶりに最高な</span>日でした。<img alt="" />
+            <div class="campaign-feedback-sample">
+                <div class="campaign-feedback-sample-card">
+                    <div class="campaign-feedback-sample-card-sentence">
+                        今日は私がしばらく過ごした中で最高の日でした。<img src="{{asset "img/close_EF5A55_24dp.svg"}}" class="campaign-feedback-sample-card-sentence-wrong-icon" alt="" />
+                    </div>
+                    <div class="campaign-feedback-sample-card-sentence">
+                        今日は<span>しばらくぶりに最高な</span>日でした。<img src="{{asset "img/done_55EFC4_24dp.svg"}}" class="campaign-feedback-sample-card-sentence-correct-icon" alt="" />
+                    </div>
                 </div>
             </div>
-            <a class="campaign-hero-action-button">Submit your writing</a>
-            <section id="service" class="campaign-service">
+            <div class="campaign-hero-action-button-container">
+                <a class="campaign-hero-action-button">Submit your writing now</a>
+            </div>
+            <section id="service" class="campaign-service campaign-section">
                 <h2 class="campaign-service-title">We provide feedback on your Japanese Writing</h2>
                 <ul class="campaign-service-cards">
                     <li class="campaign-service-card">
@@ -68,7 +82,7 @@
                 </ul>
                 <a>Get your feedback now</a>
             </section>
-            <section id="plans">
+            <section id="plans" class="campaign-plans campaign-section">
                 <h2>Plans</h2>
                 <ul>
                     <li>
@@ -111,7 +125,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="about">
+            <section id="about" class="campaign-about campaign-section">
                 <div>
                     <div>
                         We are Japanese teachers with passion in teaching writing.<br>
