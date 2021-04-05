@@ -1,6 +1,6 @@
 @font-face {
     font-family: Nunito;
-    src: url("../../font/Nunito/Nunito-Regular.ttf");
+    src: url("../../font/Nunito/Nunito-Light.ttf");
 }
 
 @font-face {
@@ -11,6 +11,7 @@
 body {
     color: #0D0C22;
     font-family: Nunito, sans-serif;
+    font-size: 14px;
 }
 
 .campaign-header {
@@ -25,7 +26,7 @@ body {
 .campaign-header-brand {
     color: #FF7F50;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: bold;
     display: inline-block;
     vertical-align: middle;
 }
@@ -51,7 +52,7 @@ body {
 
 .campaign-hero-title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
     padding-top: 38px;
     padding-left: 18px;
 }
@@ -95,13 +96,13 @@ body {
     text-align: right;
     margin-top: 24px;
     padding-right: 18px;
+    padding-bottom: 30px;
 }
 
 .campaign-hero-action-button {
     color: #ffffff;
     font-size: 14px;
     line-height: 40px;
-    font-weight: 600px;
     background-color: #FF4757;
     display: inline-block;
     padding: 0 20px; 
@@ -113,4 +114,70 @@ body {
 
 .campaign-service {
     background-color: #F9F8FD;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.campaign-service-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.campaign-service-cards {
+    margin-top: 30px;
+}
+
+.campaign-service-card {
+    background-color: #ffffff;
+    width: 334px;
+    padding: 12px 12px 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.campaign-service-card:nth-child(n + 2) {
+    margin-top: 42px;
+}
+
+.campaign-service-card-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.campaign-service-card-description {
+    color: #707070;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.campaign-service-card-list {
+    color: #707070;
+    margin-top: 10px;
+    padding-left: 12px;
+}
+
+.campaign-service-card-list-item {
+    line-height: 16px;
+}
+
+.campaign-service-card-list-item::before {
+    content: '-';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.campaign-service-card-list-item:nth-child(n + 2) {
+    margin-top: 4px;
+}
+
+.campaign-service-action-button {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #70A1FF;
+    display: inline-block;
+    margin-top: 28px;
+    padding: 0 24px;
 }
