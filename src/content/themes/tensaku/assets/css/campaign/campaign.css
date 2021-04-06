@@ -1,6 +1,19 @@
 @font-face {
     font-family: Nunito;
+    src: url("../../font/Nunito/Nunito-SemiBold.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../../font/Nunito/Nunito-Regular.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Nunito;
     src: url("../../font/Nunito/Nunito-Light.ttf");
+    font-weight: 100;
 }
 
 @font-face {
@@ -50,17 +63,18 @@ body {
     color: #FF7F50;
 }
 
+.campaign-hero {
+    padding: 38px 18px 30px;
+}
+
 .campaign-hero-title {
     font-size: 20px;
     font-weight: bold;
-    padding-top: 38px;
-    padding-left: 18px;
 }
 
 .campaign-feedback-sample {
     text-align: right;
     margin-top: 25px;
-    padding-right: 18px;
 }
 
 .campaign-feedback-sample-card {
@@ -95,8 +109,6 @@ body {
 .campaign-hero-action-button-container {
     text-align: right;
     margin-top: 24px;
-    padding-right: 18px;
-    padding-bottom: 30px;
 }
 
 .campaign-hero-action-button {
@@ -120,6 +132,7 @@ body {
 
 .campaign-service-title {
     font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
 }
 
@@ -127,15 +140,21 @@ body {
     margin-top: 30px;
 }
 
-.campaign-service-card {
-    background-color: #ffffff;
-    width: 334px;
-    padding: 12px 12px 16px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+.campaign-service-card-container:nth-child(n + 2) {
+    margin-top: 42px;
 }
 
-.campaign-service-card:nth-child(n + 2) {
-    margin-top: 42px;
+.campaign-service-card-container:nth-child(2) {
+    text-align: right;
+}
+
+.campaign-service-card {
+    text-align: left;
+    background-color: #ffffff;
+    display: inline-block;
+    max-width: 334px;
+    padding: 12px 12px 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .campaign-service-card-title {
@@ -145,19 +164,19 @@ body {
 }
 
 .campaign-service-card-description {
-    color: #707070;
     font-size: 14px;
+    font-weight: 100;
     line-height: 18px;
     margin-top: 10px;
 }
 
 .campaign-service-card-list {
-    color: #707070;
     margin-top: 10px;
     padding-left: 12px;
 }
 
 .campaign-service-card-list-item {
+    font-weight: 100;
     line-height: 16px;
 }
 
@@ -179,5 +198,152 @@ body {
     background-color: #70A1FF;
     display: inline-block;
     margin-top: 28px;
+    padding: 0 24px;
+}
+
+.campaign-plans {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.campaign-plans-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.campaign-plans-cards {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.campaign-plans-card {
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.campaign-plans-card:nth-child(n + 2) {
+    margin-top: 30px;
+}
+
+.campaign-plans-card-plan-head {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 18px;
+}
+
+.campaign-plans-card-plan-body {
+    padding: 18px 18px 48px;
+}
+
+.campaign-plans-card-plan-price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.campaign-plans-card-plan-catchphrase {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.campaign-plans-card-plan-features {
+    width: 174px;
+    margin: 14px auto 0;
+}
+
+.campaign-plans-card-plan-feature::before {
+    vertical-align: middle;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.campaign-plans-card-plan-feature:nth-child(n + 2) {
+    margin-top: 8px;
+}
+
+.campaign-plans-card-action-button {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    display: block;
+    width: 90px;
+    margin: 24px auto 0;
+}
+
+.campaign-plans-card-a .campaign-plans-card-plan-head {
+    background-color: #FF5F85;
+}
+
+.campaign-plans-card-a .campaign-plans-card-plan-feature::before {
+    content: url('../../img/done_FF5F85_24dp.svg');
+}
+
+.campaign-plans-card-a .campaign-plans-card-action-button {
+    background-color: #FF5F85;
+}
+
+.campaign-plans-card-b .campaign-plans-card-plan-head {
+    background-color: #00CCFF;
+}
+
+.campaign-plans-card-b .campaign-plans-card-plan-feature::before {
+    content: url('../../img/done_00CCFF_24dp.svg');
+}
+
+.campaign-plans-card-b .campaign-plans-card-action-button {
+    background-color: #00CCFF;
+}
+
+.campaign-plans-card-c .campaign-plans-card-plan-head {
+    background-color: #9069EA;
+}
+
+.campaign-plans-card-c .campaign-plans-card-plan-feature::before {
+    content: url('../../img/done_9069EA_24dp.svg');
+}
+
+.campaign-plans-card-c .campaign-plans-card-action-button {
+    background-color: #9069EA;
+}
+
+.campaign-about {
+    background-color: #F9F8FD;
+    padding: 60px 18px;
+}
+
+.campaign-about-card {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.campaign-about-card-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.campaign-about-card-action-button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.campaign-about-card-action-button {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    background-color: #70A1FF;
     padding: 0 24px;
 }
