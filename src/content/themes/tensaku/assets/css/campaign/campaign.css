@@ -61,6 +61,7 @@ body {
 
 .campaign-header-nav-link {
     color: #FF7F50;
+    text-decoration: none;
 }
 
 .campaign-hero {
@@ -191,13 +192,16 @@ body {
     margin-top: 4px;
 }
 
+.campaign-service-action-button-container {
+    margin-top: 28px;
+}
+
 .campaign-service-action-button {
     color: #ffffff;
     font-size: 14px;
     line-height: 40px;
     background-color: #70A1FF;
     display: inline-block;
-    margin-top: 28px;
     padding: 0 24px;
 }
 
@@ -213,7 +217,8 @@ body {
 }
 
 .campaign-plans-cards {
-    margin-top: 30px;
+    max-width: 324px;
+    margin: 30px auto 0;
     padding: 0 20px;
 }
 

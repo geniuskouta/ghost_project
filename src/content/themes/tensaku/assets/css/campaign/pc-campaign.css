@@ -1,3 +1,170 @@
-@media screen and (min-width: 720px) {
-    
+@media screen and (min-width: 1080px) {
+    .campaign-header {
+        background-color: #FF7F50;
+        padding: 24px 30px;
+    }
+
+    .campaign-header-brand {
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+    .campaign-header-nav {
+        display: inline-block;
+    }
+
+    .campaign-header-nav-close-icon, .campaign-header-nav-menu-icon {
+        display: none;
+    }
+
+    .campaign-header-nav-link {
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    .campaign-section {
+        min-width: 1080px;
+    }
+
+    .campaign-hero {
+        min-width: 1080px;
+        padding: 68px 30px;
+    }
+
+    .campaign-hero-title {
+        font-size: 32px;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .campaign-feedback-sample {
+        position: relative;
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .campaign-feedback-sample-card {
+        position: absolute;
+        top: -48px;
+        right: 0;
+        padding: 32px 42px;
+    }
+
+    .campaign-feedback-sample-card-sentence {
+        font-size: 14px;
+    }
+
+    .campaign-feedback-sample-card-sentence:nth-child(n + 2) {
+        margin-top: 24px;
+    }
+
+    .campaign-feedback-sample-card-sentence-wrong-icon, .campaign-feedback-sample-card-sentence-correct-icon {
+        width: 28px;
+
+    }
+
+    .campaign-hero-action-button-container {
+        max-width: 1120px;
+        margin: 64px auto 0;
+        text-align: left;
+    }
+
+    .campaign-hero-action-button {
+        font-size: 20px;
+        line-height: 60px;
+        padding: 0 48px;
+    }
+
+    .campaign-service {
+        padding: 60px 30px 90px;
+    }
+
+    .campaign-service-title {
+        font-size: 28px;
+        line-height: 52px;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .campaign-service-cards {
+        position: relative;
+        max-width: 1120px;
+        margin: 40px auto;
+    }
+
+    .campaign-service-card-container {
+        width: 480px;
+    }
+
+    .campaign-service-card-container:nth-child(2) {
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .campaign-service-card-container:nth-child(3) {
+        margin-top: 92px;
+        padding-left: 60px;
+    }
+
+    .campaign-service-card {
+        display: block;
+        max-width: unset;
+        width: 100%;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .campaign-service-card-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .campaign-service-card-description {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 12px;
+    }
+
+    .campaign-service-card-list {
+        margin-top: 12px;
+    }
+
+    .campaign-service-card-list-item {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .campaign-service-action-button-container {
+        position: relative;
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .campaign-service-action-button {
+        font-size: 20px;
+        line-height: 60px;
+        padding: 0 48px;
+        position: absolute;
+        top: -106px;
+        right: 0;
+    }
+
+    .campaign-plans-title {
+        font-size: 28px;
+    }
+
+    .campaign-plans-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: unset;
+        width: 1120px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .campaign-plans-card {
+        width: 324px;
+    }
 }
