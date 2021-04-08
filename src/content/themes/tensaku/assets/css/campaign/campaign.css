@@ -27,6 +27,19 @@ body {
     font-size: 14px;
 }
 
+/* ↓ max width and min width ↓ */
+.campaign-feedback-sample,
+.campaign-service-cards,
+.campaign-plans-cards,
+.campaign-hero-title,
+.campaign-service-title,
+.campaign-hero-action-button-container,
+.campaign-service-action-button-container,
+.campaign-about-card {
+    max-width: 480px;
+    margin: 0 auto;
+}
+/* ↑ max width and min width ↑ */
 .campaign-header {
     background-color: #ffffff;
     display: flex;
@@ -119,6 +132,7 @@ body {
     background-color: #FF4757;
     display: inline-block;
     padding: 0 20px; 
+    white-space: nowrap;
 }
 
 .campaign-section {
@@ -203,6 +217,7 @@ body {
     background-color: #70A1FF;
     display: inline-block;
     padding: 0 24px;
+    white-space: nowrap;
 }
 
 .campaign-plans {
@@ -260,7 +275,7 @@ body {
 }
 
 .campaign-plans-card-plan-features {
-    width: 174px;
+    max-width: 168px;
     margin: 14px auto 0;
 }
 
@@ -284,6 +299,7 @@ body {
     display: block;
     width: 90px;
     margin: 24px auto 0;
+    white-space: nowrap;
 }
 
 .campaign-plans-card-a .campaign-plans-card-plan-head {
@@ -324,7 +340,7 @@ body {
 
 .campaign-about {
     background-color: #F9F8FD;
-    padding: 60px 18px;
+    padding: 60px 18px 112px;
 }
 
 .campaign-about-card {
@@ -335,8 +351,9 @@ body {
 .campaign-about-card-text {
     font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
     font-style: italic;
+    line-height: 20px;
+    max-width: 378px;
 }
 
 .campaign-about-card-action-button-container {
@@ -351,4 +368,5 @@ body {
     display: inline-block;
     background-color: #70A1FF;
     padding: 0 24px;
+    white-space: nowrap;
 }

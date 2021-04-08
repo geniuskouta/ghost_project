@@ -1,4 +1,20 @@
 @media screen and (min-width: 1080px) {
+    /* ↓ max width and min width ↓ */
+    .campaign-feedback-sample,
+    .campaign-service-cards,
+    .campaign-plans-cards,
+    .campaign-hero-title,
+    .campaign-service-title,
+    .campaign-hero-action-button-container,
+    .campaign-service-action-button-container {
+        max-width: 1280px;
+    }
+
+    .campaign-section, .campaign-hero {
+        min-width: 1080px;
+    }
+    /* ↑ max width and min width ↑ */
+
     .campaign-header {
         background-color: #FF7F50;
         padding: 24px 30px;
@@ -19,27 +35,24 @@
 
     .campaign-header-nav-link {
         color: #ffffff;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    .campaign-section {
-        min-width: 1080px;
+    .campaign-header-nav-link-list-item:nth-child(n + 2) {
+        margin-left: 48px;
     }
 
     .campaign-hero {
-        min-width: 1080px;
-        padding: 68px 30px;
+        padding: 94px 30px 124px;
     }
 
     .campaign-hero-title {
-        font-size: 32px;
-        max-width: 1120px;
+        font-size: 38px;
         margin: 0 auto;
     }
 
     .campaign-feedback-sample {
         position: relative;
-        width: 1120px;
         margin: 0 auto;
     }
 
@@ -64,7 +77,6 @@
     }
 
     .campaign-hero-action-button-container {
-        max-width: 1120px;
         margin: 64px auto 0;
         text-align: left;
     }
@@ -82,13 +94,11 @@
     .campaign-service-title {
         font-size: 28px;
         line-height: 52px;
-        max-width: 1120px;
         margin: 0 auto;
     }
 
     .campaign-service-cards {
         position: relative;
-        max-width: 1120px;
         margin: 40px auto;
     }
 
@@ -111,18 +121,18 @@
         display: block;
         max-width: unset;
         width: 100%;
-        padding: 24px;
+        padding: 24px 42px 24px 24px;
         box-sizing: border-box;
     }
 
     .campaign-service-card-title {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .campaign-service-card-description {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 28px;
         margin-top: 12px;
     }
 
@@ -131,13 +141,12 @@
     }
 
     .campaign-service-card-list-item {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .campaign-service-action-button-container {
         position: relative;
-        width: 1120px;
         margin: 0 auto;
     }
 
@@ -150,6 +159,10 @@
         right: 0;
     }
 
+    .campaign-plans {
+        padding: 60px 30px;
+    }
+
     .campaign-plans-title {
         font-size: 28px;
     }
@@ -157,14 +170,82 @@
     .campaign-plans-cards {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         max-width: unset;
-        width: 1120px;
-        margin: 0 auto;
+        max-width: 1280px;
+        margin: 30px auto 0;
         box-sizing: border-box;
     }
 
     .campaign-plans-card {
         width: 324px;
+    }
+
+    .campaign-plans-card:nth-child(n + 2) {
+        margin-top: 0;
+    }
+
+    .campaign-plans-card-plan-head {
+        font-size: 24px;
+    }
+
+    .campaign-plans-card-plan-body {
+        padding: 28px 0 60px;
+    }
+
+    .campaign-plans-card-plan-price {
+        font-size: 32px;
+    }
+
+    .campaign-plans-card-plan-catchphrase {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .campaign-plans-card-plan-features {
+        max-width: 204px;
+        margin-top: 24px;
+    }
+
+    .campaign-plans-card-plan-feature {
+        font-size: 18px;
+    }
+
+    .campaign-plans-card-plan-feature::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    .campaign-plans-card-plan-feature:nth-child(n + 2) {
+        margin-top: 18px;
+    }
+
+    .campaign-plans-card-action-button {
+        font-size: 16px;
+        line-height: 36px;
+        width: 112px;
+        margin-top: 28px;
+    }
+
+    .campaign-about-card {
+        max-width: 1020px;
+        padding: 60px;
+    }
+    
+    .campaign-about-card-text {
+        font-size: 22px;
+        line-height: 32px;
+        max-width: unset;
+    }
+
+    .campaign-about-card-action-button-container {
+        text-align: left;
+    }
+    
+    .campaign-about-card-action-button {
+        font-size: 20px;
+        line-height: 60px;
+        margin-top: 22px;
+        padding: 0 48px;
     }
 }
