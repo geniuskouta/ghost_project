@@ -21,10 +21,31 @@
     src: url("../../font/Noto_Sans_JP/NotoSansJP-Regular.otf");
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #0D0C22;
     font-family: Nunito, sans-serif;
     font-size: 14px;
+}
+
+.campaign-menu-overlay {
+    background-color: #000000;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.campaign-menu-overlay-shown {
+    display: block;
 }
 
 /* ↓ max width and min width ↓ */
@@ -57,14 +78,34 @@ body {
     vertical-align: middle;
 }
 
-.campaign-header-nav {
-    display: none;
-    vertical-align: middle;
+@media screen and (max-width: 1079px) {
+    .campaign-header-nav {
+        text-align: right;
+        background-color: #ffffff;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+        width: 192px;
+        height: 100%;
+        padding: 12px 12px 12px 24px;
+        box-shadow: -2px 0 6px rgba(0, 0, 0, 0.16);
+        transition: 0.2s;
+        box-sizing: border-box;
+    }
+
+    .campaign-header-nav-shown {
+        display: block;
+    }
 }
 
-.campaign-header-nav-link-list-item {
+.campaign-header-nav-menu-open {
     display: inline-block;
-    margin-left: 8px;
+}
+
+.campaign-header-nav-menu-close {
+    display: inline-block;
 }
 
 .campaign-header-nav-menu-icon {
@@ -72,9 +113,38 @@ body {
     height: 32px;
 }
 
+.campaign-header-nav-close-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.campaign-header-nav-link-list {
+    font-size: 0;
+    margin-top: 72px;
+}
+
+.campaign-header-nav-link-list-item {
+    text-align: left;
+    display: block;
+}
+
+.campaign-header-nav-link-list-item:nth-child(n + 2) {
+    margin-top: 18px;
+}
+
 .campaign-header-nav-link {
-    color: #FF7F50;
+    color: #47A3FF;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
+}
+
+.campaign-header-nav-link-icon {
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 .campaign-hero {

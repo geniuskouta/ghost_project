@@ -26,20 +26,37 @@
     }
 
     .campaign-header-nav {
+        position: static;
         display: inline-block;
+        vertical-align: middle;
     }
 
     .campaign-header-nav-close-icon, .campaign-header-nav-menu-icon {
         display: none;
     }
 
-    .campaign-header-nav-link {
-        color: #ffffff;
-        font-size: 18px;
+    .campaign-header-nav-menu-close, .campaign-header-nav-link-icon {
+        display: none;
+    }
+
+    .campaign-header-nav-link-list {
+        margin-top: 0;
+    }
+
+    .campaign-header-nav-link-list-item {
+        text-align: left;
+        display: inline-block;
     }
 
     .campaign-header-nav-link-list-item:nth-child(n + 2) {
+        margin-top: 0;
         margin-left: 48px;
+    }
+
+    .campaign-header-nav-link {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1;
     }
 
     .campaign-hero {

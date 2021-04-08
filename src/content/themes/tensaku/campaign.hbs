@@ -10,25 +10,30 @@
     <title>Tensaku JP</title>
 </head>
 <body>
+    <div campaign-menu-overlay class="campaign-menu-overlay"></div>
     <header class="campaign-header">
         <div class="campaign-header-brand">Tensaku JP</div>
-        <img src="{{asset "img/menu_FF7F50_24dp.svg"}}" class="campaign-header-nav-menu-icon" alt="" />
-        <nav class="campaign-header-nav">
-            <img src="{{asset "img/close_black_24dp.svg"}}" class="campaign-header-nav-close-icon" alt="" />
+        <a campaign-menu-open class="campaign-header-nav-menu-open">
+            <img src="{{asset "img/menu_FF7F50_24dp.svg"}}" class="campaign-header-nav-menu-icon" alt="" />
+        </a>
+        <nav campaign-header-nav class="campaign-header-nav">
+            <a campaign-menu-close class="campaign-header-nav-menu-close">
+                <img src="{{asset "img/close_black_24dp.svg"}}" class="campaign-header-nav-close-icon" alt="" />
+            </a>
             <ul class="campaign-header-nav-link-list">
                 <li class="campaign-header-nav-link-list-item">
-                    <a href="#service" class="campaign-header-nav-link">
-                        Service
+                    <a href="#service" campaign-menu-close class="campaign-header-nav-link">
+                        <img class="campaign-header-nav-link-icon" src="{{asset "img/article_47A3FF_24dp.svg"}}" />Service
                     </a>
                 </li>
                 <li class="campaign-header-nav-link-list-item">
-                    <a href="#plans" class="campaign-header-nav-link">
-                        Plans
+                    <a href="#plans" campaign-menu-close class="campaign-header-nav-link">
+                        <img class="campaign-header-nav-link-icon" src="{{asset "img/price_check_47A3FF_24dp.svg"}}" />Plans
                     </a>
                 </li>
                 <li class="campaign-header-nav-link-list-item">
-                    <a href="#about" class="campaign-header-nav-link">
-                        About us
+                    <a href="#about" campaign-menu-close class="campaign-header-nav-link">
+                        <img class="campaign-header-nav-link-icon" src="{{asset "img/business_47A3FF_24dp.svg"}}" />About us
                     </a>
                 </li>
             </ul>
@@ -156,5 +161,6 @@
             </section>
         </article>
     </main>
+    <script src="{{asset "js/campaign/sp-menu.js"}}"></script>
 </body>
 </html>
