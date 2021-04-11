@@ -10,6 +10,14 @@
         max-width: 1280px;
     }
 
+    .campaign-action-button {
+        transition: opacity 0.2s;
+    }
+
+    .campaign-action-button:hover {
+        opacity: 0.7;
+    }
+
     .campaign-section, .campaign-hero {
         min-width: 1080px;
     }
@@ -57,6 +65,11 @@
         color: #ffffff;
         font-size: 18px;
         line-height: 1;
+        transition: opacity 0.2s;
+    }
+
+    .campaign-header-nav-link:hover {
+        opacity: 0.8;
     }
 
     .campaign-hero {
@@ -120,17 +133,17 @@
     }
 
     .campaign-service-card-container {
-        width: 480px;
+        width: 584px;
     }
 
     .campaign-service-card-container:nth-child(2) {
         position: absolute;
-        top: 40px;
+        top: 314px;
         right: 0;
     }
 
     .campaign-service-card-container:nth-child(3) {
-        margin-top: 92px;
+        margin-top: 258px;
         padding-left: 60px;
     }
 
@@ -138,8 +151,32 @@
         display: block;
         max-width: unset;
         width: 100%;
-        padding: 24px 42px 24px 24px;
+        padding: 24px;
         box-sizing: border-box;
+    }
+
+    .campaign-service-card-container:nth-child(1) .campaign-service-card {
+        background-image: url('../../img/card-visual-studying.svg');
+        background-size: 282px 210px;
+        background-position: top 8px right 12px;
+        background-repeat: no-repeat;
+        padding-top: 64px;
+    }
+
+    .campaign-service-card-container:nth-child(2) .campaign-service-card {
+        background-image: url('../../img/card-visual-reviews.svg');
+        background-size: 214px 98px;
+        background-position: top 24px right 18px;
+        background-repeat: no-repeat;
+        padding-right: 148px;
+    }
+
+    .campaign-service-card-container:nth-child(3) .campaign-service-card {
+        background-image: url('../../img/card-visual-googledocs.svg');
+        background-size: 152px 122px;
+        background-position: top 16px right 12px;
+        background-repeat: no-repeat;
+        padding-right: 148px;
     }
 
     .campaign-service-card-title {
@@ -151,6 +188,10 @@
         font-size: 18px;
         line-height: 28px;
         margin-top: 12px;
+    }
+
+    .campaign-service-card-container:first-child .campaign-service-card-description {
+        margin-top: 134px;
     }
 
     .campaign-service-card-list {

@@ -176,6 +176,10 @@ body {
     white-space: nowrap;
 }
 
+.campaign-feedback-sample-card-sentence-correct-highlight {
+    color: #FF7F50;
+}
+
 .campaign-feedback-sample-card-sentence-wrong-icon {
     width: 20px;
     vertical-align: middle;
