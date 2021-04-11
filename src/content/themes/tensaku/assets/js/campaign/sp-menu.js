@@ -12,6 +12,7 @@ function registerToggleSpMenu() {
     menuIcon.addEventListener('click', openMenu);
 
     function openMenu() {
+        disableScroll();
         fadeOpenMenu();
         overlay.addEventListener('click', closeMenu);
         Array.prototype.forEach.call(closeTriggers, function(closeTrigger) {
@@ -20,6 +21,7 @@ function registerToggleSpMenu() {
     }
 
     function closeMenu() {
+        enableScroll();
         fadeCloseMenu();
         overlay.removeEventListener('click', closeMenu);
         Array.prototype.forEach.call(closeTriggers, function(closeTrigger) {
@@ -47,5 +49,17 @@ function registerToggleSpMenu() {
             overlay.style.opacity = "";
             nav.style.opacity = "";
         }, 300);
+    }
+
+    function disableScroll() {
+          var body = document.querySelector('body');
+          body.style.height = '100vh';
+          body.style.overflow = 'hidden';
+    }
+
+    function enableScroll() {
+        var body = document.querySelector('body');
+        body.style.height = '';
+        body.style.overflow = '';
     }
 }
