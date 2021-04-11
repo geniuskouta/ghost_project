@@ -132,25 +132,14 @@
         margin: 40px auto;
     }
 
-    .campaign-service-card-container {
-        width: 584px;
-    }
-
-    .campaign-service-card-container:nth-child(2) {
-        position: absolute;
-        top: 314px;
-        right: 0;
-    }
-
     .campaign-service-card-container:nth-child(3) {
-        margin-top: 258px;
         padding-left: 60px;
     }
 
     .campaign-service-card {
-        display: block;
+        display: inline-block;
         max-width: unset;
-        width: 100%;
+        width: 584px;
         padding: 24px;
         box-sizing: border-box;
     }
