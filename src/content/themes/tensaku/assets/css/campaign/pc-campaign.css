@@ -94,7 +94,7 @@
     }
 
     .campaign-feedback-sample-card-sentence {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .campaign-feedback-sample-card-sentence:nth-child(n + 2) {
@@ -139,9 +139,13 @@
     .campaign-service-card {
         display: inline-block;
         max-width: unset;
-        width: 584px;
+        width: 632px;
         padding: 24px;
         box-sizing: border-box;
+    }
+
+    .campaign-service-card-visual-wrapper {
+        display: none;
     }
 
     .campaign-service-card-container:nth-child(1) .campaign-service-card {
@@ -154,7 +158,7 @@
 
     .campaign-service-card-container:nth-child(2) .campaign-service-card {
         background-image: url('../../img/card-visual-reviews.svg');
-        background-size: 214px 98px;
+        background-size: 238px 112px;
         background-position: top 24px right 18px;
         background-repeat: no-repeat;
         padding-right: 148px;
@@ -169,13 +173,13 @@
     }
 
     .campaign-service-card-title {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .campaign-service-card-description {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 30px;
         margin-top: 12px;
     }
 

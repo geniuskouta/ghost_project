@@ -153,7 +153,8 @@ body {
 }
 
 .campaign-hero-title {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 34px;
     font-weight: bold;
 }
 
@@ -172,7 +173,7 @@ body {
 
 .campaign-feedback-sample-card-sentence {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -201,7 +202,7 @@ body {
 
 .campaign-hero-action-button {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 40px;
     background-color: #FF4757;
     display: inline-block;
@@ -220,7 +221,7 @@ body {
 }
 
 .campaign-service-title {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: bold;
 }
@@ -242,20 +243,29 @@ body {
     background-color: #ffffff;
     display: inline-block;
     max-width: 334px;
-    padding: 12px 12px 16px;
+    padding: 20px 14px 20px 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .campaign-service-card-title {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
 }
 
+.campaign-service-card-visual-wrapper {
+    margin-top: 8px;
+}
+
+.campaign-service-card-visual {
+    display: block;
+    width: 100%;
+}
+
 .campaign-service-card-description {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 100;
-    line-height: 18px;
+    line-height: 24px;
     margin-top: 10px;
 }
 
@@ -265,8 +275,9 @@ body {
 }
 
 .campaign-service-card-list-item {
+    font-size: 16px;
     font-weight: 100;
-    line-height: 16px;
+    line-height: 24px;
 }
 
 .campaign-service-card-list-item::before {
@@ -286,7 +297,7 @@ body {
 
 .campaign-service-action-button {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 40px;
     background-color: #70A1FF;
     display: inline-block;
@@ -300,7 +311,7 @@ body {
 }
 
 .campaign-plans-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -423,10 +434,9 @@ body {
 }
 
 .campaign-about-card-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
-    font-style: italic;
-    line-height: 20px;
+    line-height: 24px;
     max-width: 378px;
 }
 
@@ -437,7 +447,7 @@ body {
 
 .campaign-about-card-action-button {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 40px;
     display: inline-block;
     background-color: #70A1FF;
