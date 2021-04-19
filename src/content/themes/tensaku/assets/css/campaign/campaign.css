@@ -339,11 +339,11 @@ body {
 }
 
 .campaign-plans-card-plan-body {
-    padding: 18px 18px 48px;
+    padding: 24px 18px 48px;
 }
 
 .campaign-plans-card-plan-price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
