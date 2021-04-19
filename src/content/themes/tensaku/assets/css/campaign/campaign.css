@@ -203,6 +203,7 @@ body {
 .campaign-hero-action-button {
     color: #ffffff;
     font-size: 16px;
+    text-decoration: none;
     line-height: 40px;
     background-color: #FF4757;
     display: inline-block;
@@ -298,6 +299,7 @@ body {
 .campaign-service-action-button {
     color: #ffffff;
     font-size: 16px;
+    text-decoration: none;
     line-height: 40px;
     background-color: #70A1FF;
     display: inline-block;
@@ -380,6 +382,7 @@ body {
     color: #ffffff;
     font-size: 14px;
     text-align: center;
+    text-decoration: none;
     line-height: 32px;
     display: block;
     width: 90px;
@@ -448,6 +451,7 @@ body {
 .campaign-about-card-action-button {
     color: #ffffff;
     font-size: 16px;
+    text-decoration: none;
     line-height: 40px;
     display: inline-block;
     background-color: #70A1FF;
