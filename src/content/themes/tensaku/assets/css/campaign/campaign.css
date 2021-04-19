@@ -16,11 +16,6 @@
     font-weight: 100;
 }
 
-@font-face {
-    font-family: 'Noto Sans JP';
-    src: url("../../font/Noto_Sans_JP/NotoSansJP-Regular.otf");
-}
-
 html, body {
     scroll-behavior: smooth;
 }
