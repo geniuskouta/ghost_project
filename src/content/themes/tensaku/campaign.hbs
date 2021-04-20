@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tensaku JP</title>
-    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="{{asset "font/Nunito/font.css"}}" rel="stylesheet" rel="preload" as="style">
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" rel="preload" as="style">
     <link rel="stylesheet" href="{{asset "css/reset.css"}}" />
     <link rel="stylesheet" href="{{asset "css/campaign/campaign.css"}}" />
     <link rel="stylesheet" href="{{asset "css/campaign/pc-campaign.css"}}" />
@@ -94,7 +95,7 @@
                         <div class="campaign-service-card">
                             <h3 class="campaign-service-card-title">Google Docs</h3>
                             <div class="campaign-service-card-visual-wrapper">
-                                <img class="campaign-service-card-visual" src={{asset "img/card-visual-googledocs.svg"}} alt="">
+                                <img class="campaign-service-card-visual-googledocs campaign-service-card-visual" src={{asset "img/card-visual-googledocs.svg"}} alt="">
                             </div>
                             <div class="campaign-service-card-description">
                                 We provide our feedback via Google Docs.<br>
