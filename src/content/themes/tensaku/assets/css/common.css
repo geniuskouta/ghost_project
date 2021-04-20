@@ -1,0 +1,85 @@
+body {
+    color: #0D0C22;
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    background-color: #F9F8FD;
+    padding-bottom: 240px;
+}
+
+.common-header {
+
+}
+
+.common-header-inner {
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.common-header-brand-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.common-header-brand-description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.common-header, .common-paper {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.common-paper {
+    display: block;
+    padding: 0 12px;
+}
+
+.common-post-list {
+
+}
+
+.common-post-list-item {
+    background-color: #ffffff;
+    display: block;
+    min-height: 180px;
+    padding: 20px 14px 20px 20px;
+    box-sizing: border-box;
+}
+
+.common-post-list-item:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+.common-post-list-item-title {
+    color: #2d3436;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration-color: #FF7F50;
+    display: block;
+}
+
+.common-post-list-item-content {
+    margin-top: 12px;
+}
+
+.common-post-list-item-image-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.common-post-list-item-image {
+    display: block;
+    width: 100%;
+}
+
+.common-post-list-item-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+}
+
+.common-pagination {
+    margin-top: 20px;
+}

@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="{{asset "css/reset.css"}}" />
     <link rel="stylesheet" href="{{asset "css/common.css"}}" />
 
+    {{!-- site fonts --}}
+    <link href="{{asset "font/Nunito/font.css"}}" rel="stylesheet" rel="preload" as="style">
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" rel="preload" as="style">
+
     {{#if post}}
     {{!-- post page css --}}
+    <link rel="stylesheet" href="{{asset "css/post/post-default.css"}}" />
     <link rel="stylesheet" href="{{asset "css/post/post-common.css"}}" />
     {{/if}}
 

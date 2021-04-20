@@ -1,13 +1,29 @@
-{{!< default }}
-<main class="common-paper">
-    {{!-- For each one of the posts, display the title  --}}
+{{!< default }} <main class="common-paper">
+    {{!-- For each one of the posts, display the title --}}
     <ul class="common-post-list">
-    {{#foreach posts}}
+        {{#foreach posts}}
         <li class="common-post-list-item">
-            <a href="{{url}}">{{title}}</a>
+            <a href="{{url}}" class="common-post-list-item-title">{{title}}</a>
+            <div class="common-post-list-item-content">
+                {{#if feature_image}}
+                <a class="common-post-list-item-image-wrapper" href="{{url}}">
+                    {{!-- This is a responsive image, it loads different sizes depending on device
+                    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
+                    --}}
+                    <img class="common-post-list-item-image" loading="lazy" src="{{img_url feature_image}}" alt="{{title}}" />
+                </a>
+                {{/if}}
+                <div class="common-post-list-item-description">
+                    {{#if feature_image}}
+                        <p>{{excerpt words="30"}}</p>
+                    {{else}}
+                        <p>{{excerpt words="44"}}</p>
+                    {{/if}}
+                </div>
+            </div>
         </li>
-    {{/foreach}}
+        {{/foreach}}
     </ul>
-    {{!-- pagination block  --}}
+    {{!-- pagination block --}}
     {{pagination}}
-</main>
+    </main>
