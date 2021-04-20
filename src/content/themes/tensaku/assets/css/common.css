@@ -3,11 +3,13 @@ body {
     font-family: Nunito, sans-serif;
     font-weight: 300;
     background-color: #F9F8FD;
-    padding-bottom: 240px;
+    padding-bottom: 180px;
 }
 
 .common-header {
-
+    background: #ee5253;
+    color: #ffffff;
+    box-shadow: 0 30px 0 #ee5253;
 }
 
 .common-header-inner {
@@ -17,15 +19,17 @@ body {
 
 .common-header-brand-title {
     font-size: 24px;
+    font-weight: 700;
     text-align: center;
 }
 
 .common-header-brand-description {
     text-align: center;
+    line-height: 20px;
     margin-top: 20px;
 }
 
-.common-header, .common-paper {
+.common-header-inner, .common-paper {
     max-width: 480px;
     margin: 0 auto;
 }
@@ -44,6 +48,7 @@ body {
     display: block;
     min-height: 180px;
     padding: 20px 14px 20px 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
 }
 
@@ -78,6 +83,24 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin-top: 12px;
+}
+
+.common-post-list-item-readmore-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 38px;
+    background-color: #FF7F50;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 0 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s;
+}
+
+.common-post-list-item-readmore-link:hover {
+    opacity: 0.7;
 }
 
 .common-pagination {

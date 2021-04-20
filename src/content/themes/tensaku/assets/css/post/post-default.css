@@ -23,10 +23,20 @@ h3 {
     line-height: 24px;
 }
 
-*:nth-child(n + 2) {
+*:not(body):nth-child(n + 2) {
     margin-top: 12px;
 }
 
 img {
     max-width: 100%;
+}
+
+pre {
+    background-color: #F9F8FD;
+    padding: 10px;
+    overflow: auto;
+}
+
+pre::-webkit-scrollbar {
+    display: none;
 }
