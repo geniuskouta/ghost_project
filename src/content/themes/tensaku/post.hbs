@@ -1,11 +1,58 @@
 {{!< default }}
 <main class="post-common-paper">
-{{#post}}
+    {{#post}}
     <article>
         <h1 class="post-common-title">{{title}}</h1>
         <section class="post-common-content">
             {{content}}
         </section>
     </article>
-{{/post}}
+    <aside class="post-common-read-next">
+        <div class="post-common-read-next-inner">
+            <div class="post-common-read-next-feed">
+                {{#if primary_tag}}
+                {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
+                {{#if related_posts}}
+                <div class="post-common-read-next-card">
+                    <div class="post-common-read-next-card-header">
+                        {{#../primary_tag}}
+                        <div><span>More in</span> <a href="{{url}}">{{name}}</a></div>
+                        {{/../primary_tag}}
+                    </div>
+                    <div class="post-common-read-next-card-content">
+                        <ul>
+                            {{#foreach related_posts}}
+                            <li>
+                                <a href="{{url}}">{{title}}</a>
+                                <div class="post-common-read-next-card-meta">{{reading_time}}</div>
+                            </li>
+                            {{/foreach}}
+                        </ul>
+                    </div>
+                    <div class="post-common-read-next-card-footer">
+                        <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='No
+                            posts' singular='% post' plural='See all % posts'}}
+                            →</a>
+                    </div>
+                </div>
+                {{/if}}
+                {{/get}}
+                {{/if}}
+
+                {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs
+                --}}
+                {{#next_post}}
+                {{> "post-card"}}
+                {{/next_post}}
+
+                {{!-- If there's a previous post, display it using the same markup included from -
+                partials/post-card.hbs --}}
+                {{#prev_post}}
+                {{> "post-card"}}
+                {{/prev_post}}
+            </div>
+        </div>
+    </aside>
+    {{!-- Links to Previous/Next posts --}}
+    {{/post}}
 </main>
