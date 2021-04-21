@@ -118,7 +118,7 @@ body {
 }
 
 .common-footer-inner {
-    padding: 40px 20px 100px;
+    padding: 40px 20px 60px;
 }
 
 .common-footer-aboutus {
@@ -132,5 +132,22 @@ body {
     font-weight: bold;
     text-align: center;
     border-top: 1px solid #D8E8F7;
+    margin-top: 10px;
     padding-top: 20px;
+}
+
+.common-footer-menu-items {
+    text-align: center;
+}
+
+.common-footer-menu-item {
+    display: inline-block;
+}
+
+.common-footer-menu-item {
+    margin-left: 4px;
+}
+
+.common-footer-menu-item-link {
+    color: #FF7F50;
 }
