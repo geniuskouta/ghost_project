@@ -3,7 +3,9 @@ body {
     font-family: Nunito, sans-serif;
     font-weight: 300;
     background-color: #F9F8FD;
-    padding-bottom: 180px;
+    position: relative;
+    min-height: calc(100vh - 240px);
+    padding-bottom: 240px;
 }
 
 .common-header {
@@ -104,4 +106,31 @@ body {
 
 .common-pagination {
     margin-top: 20px;
+}
+
+.common-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.common-footer-inner {
+    padding: 40px 20px 100px;
+}
+
+.common-footer-aboutus {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.common-footer-credit {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #D8E8F7;
+    padding-top: 20px;
 }

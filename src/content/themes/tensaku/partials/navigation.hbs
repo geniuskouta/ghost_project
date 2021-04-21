@@ -1,13 +1,10 @@
-<nav class="common-header-menu">
-    <button
-    data-e_click="header-menu-button"
-    class="common-header-menu-button">MENU</button>
+<nav class="common-footer-menu">
     <ul 
-    data-p_header-menu="hidden"
-    class="common-header-menu-items common-header-menu-items-hidden">
+    data-p_footer-menu="hidden"
+    class="common-footer-menu-items common-footer-menu-items-hidden">
         <!-- Loop through the navigation items -->
         {{#foreach navigation}}
-        <li class="common-header-menu-item {{#if current}} nav-current{{/if}}">
+        <li class="common-footer-menu-item {{#if current}} nav-current{{/if}}">
             <a href="{{url absolute="true"}}">{{label}}</a>
         </li>
         {{/foreach}}

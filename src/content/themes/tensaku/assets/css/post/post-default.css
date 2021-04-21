@@ -23,7 +23,7 @@ h3 {
     line-height: 24px;
 }
 
-*:not(body):nth-child(n + 2) {
+*:not([class], header, body, main, article, footer):nth-child(n + 2) {
     margin-top: 12px;
 }
 
