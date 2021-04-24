@@ -167,3 +167,16 @@ body {
 .common-footer-menu-item-link {
     color: #FF7F50;
 }
+
+.common-post-nopost-message {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px 0 0;
+}
+
+.common-post-nopost-message-visual {
+    display: block;
+    width: 300px;
+    margin: 18px auto;
+}
