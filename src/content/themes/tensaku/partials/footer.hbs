@@ -4,7 +4,9 @@
             We are Japanese teachers with passion in teaching writing.<br>
             Our goal is to help Japanese learners gain confidence with our writing feedback.
         </div> --}}
-        {{> navigation}}
+        {{#if @site.navigation}}
+        {{navigation}}
+        {{/if}}
         <div class="common-footer-credit">All Rights by Tensaku JP</div>
     </div>
 </footer>
