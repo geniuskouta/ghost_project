@@ -12,23 +12,39 @@ body {
     color: #ffffff;
     background-color: #FF7F50;
     box-shadow: 0 30px 0 #FF7F50;
+    background-image: url('../../assets/img/blog/header-visual-studying.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: bottom -30px center;
 }
 
 .common-header-inner {
-    padding: 40px 0;
+    padding: 80px 0;
     box-sizing: border-box;
 }
 
 .common-header-brand-title {
-    font-size: 24px;
-    font-weight: 700;
     text-align: center;
 }
 
 .common-header-brand-description {
     text-align: center;
-    line-height: 20px;
     margin-top: 20px;
+}
+
+.common-header-brand-title-text, .common-header-brand-description-text {
+    background-color: #1e272e;
+    padding: 0 8px;
+}
+
+.common-header-brand-title-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.common-header-brand-description-text {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .common-header-inner, .common-paper {
