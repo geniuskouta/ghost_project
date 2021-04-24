@@ -23,7 +23,7 @@ h3 {
     line-height: 24px;
 }
 
-*:not([class], header, body, main, article, footer):nth-child(n + 2) {
+.post-common-content *:nth-child(n + 2) {
     margin-top: 12px;
 }
 

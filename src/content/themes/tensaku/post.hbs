@@ -7,29 +7,31 @@
             {{content}}
         </section>
     </article>
-    <aside class="post-common-read-next">
-        <div class="post-common-read-next-inner">
-            <div class="post-common-read-next-feed">
+    <aside class="post-common-readnext">
+        <div class="post-common-readnext-inner">
+            <div class="post-common-readnext-feed">
                 {{#if primary_tag}}
                 {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
                 {{#if related_posts}}
-                <div class="post-common-read-next-card">
-                    <div class="post-common-read-next-card-header">
+                <div class="post-common-readnext-card">
+                    <div class="post-common-readnext-card-header">
                         {{#../primary_tag}}
-                        <div><span>More in</span> <a href="{{url}}">{{name}}</a></div>
+                        <div class="post-common-readnext-title">
+                            <span>More in</span> <a class="post-common-readnext-link post-common-readnext-link-large" href="{{url}}">{{name}}</a>
+                        </div>
                         {{/../primary_tag}}
                     </div>
-                    <div class="post-common-read-next-card-content">
+                    <div class="post-common-readnext-card-content">
                         <ul>
                             {{#foreach related_posts}}
                             <li>
-                                <a href="{{url}}">{{title}}</a>
-                                <div class="post-common-read-next-card-meta">{{reading_time}}</div>
+                                <a class="post-common-readnext-link" href="{{url}}">{{title}}</a>
+                                <div class="post-common-readnext-card-meta">{{reading_time}}</div>
                             </li>
                             {{/foreach}}
                         </ul>
                     </div>
-                    <div class="post-common-read-next-card-footer">
+                    <div class="post-common-readnext-card-footer">
                         <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='No
                             posts' singular='% post' plural='See all % posts'}}
                             →</a>
@@ -42,13 +44,25 @@
                 {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs
                 --}}
                 {{#next_post}}
-                {{> "post-card"}}
+                <div class="post-common-readnext-card">
+                    <div class="post-common-readnext-card-header">
+                        <div class="post-common-readnext-title">Next post</div>
+                    </div>
+                    <a href="{{url}}" class="post-common-readnext-link">{{title}}</a>
+                    <div class="post-common-readnext-card-meta">{{reading_time}}</div>
+                </div>
                 {{/next_post}}
 
                 {{!-- If there's a previous post, display it using the same markup included from -
                 partials/post-card.hbs --}}
                 {{#prev_post}}
-                {{> "post-card"}}
+                <div class="post-common-readnext-card">
+                    <div class="post-common-readnext-card-header">
+                        <div class="post-common-readnext-title">Previous post</div>
+                    </div>
+                    <a href="{{url}}" class="post-common-readnext-link">{{title}}</a>
+                    <div class="post-common-readnext-card-meta">{{reading_time}}</div>
+                </div>
                 {{/prev_post}}
             </div>
         </div>

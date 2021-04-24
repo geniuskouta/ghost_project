@@ -6,8 +6,38 @@
     box-sizing: border-box;
 }
 
-.post-common-read-next {
+.post-common-readnext {
     border-top: 6px solid #F9F8FD;
     margin-top: 30px;
     padding-top: 30px;
+}
+
+.post-common-readnext-card:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+.post-common-readnext-title {
+    color: #0D0C22;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post-common-readnext-link {
+    color: #0D0C22;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-color: #FF7F50;
+    transition: opacity 0.2s;
+}
+
+.post-common-readnext-link-large {
+    font-size: 20px;
+}
+
+.post-common-readnext-link:hover {
+    opacity: 0.8;
+}
+
+.post-common-readnext-card-content {
+    margin-top: 20px;
 }
