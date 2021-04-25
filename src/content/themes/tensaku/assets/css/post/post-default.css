@@ -1,51 +1,58 @@
 body {
+    color: #404040;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
 }
 
 h1, h2, h3, strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h1 {
     font-size: 24px;
     line-height: 32px;
-    border-left: 4px solid #FF7F50;
-    padding-left: 12px;
+    text-align: center;
 }
 
-h2 {
+h1 + .post-common-content {
+    margin-top: 24px;
+}
+
+.post-common-content h2 {
     font-size: 20px;
     line-height: 28px;
+    text-decoration: underline;
+    text-decoration-color: #FF7F50;
 }
 
-h3 {
-    font-size: 18px;
+.post-common-content h3 {
+    font-size: 16px;
     line-height: 24px;
+    border-bottom: 3px solid #F9F8FD;
+    padding-bottom: 2px;
 }
 
-.post-common-content, .post-common-content *:nth-child(n + 2) {
-    margin-top: 12px;
+.post-common-content *:nth-child(n + 2) {
+    margin-top: 24px;
 }
 
-img {
+.post-common-content img {
     max-width: 100%;
 }
 
-pre {
+.post-common-content a {
+    color: #FF7F50;
+}
+
+.post-common-content pre {
     background-color: #F9F8FD;
     padding: 10px;
     overflow: auto;
 }
 
-.japanese-font {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-style: normal;
-}
-
-span.japanese-font {
-    display: inline-block;
+.post-common-content h2:nth-child(n + 2), .post-common-content h3:nth-child(n + 2) {
+    margin-top: 30px;
 }
 
 .post-common-content ul, .post-common-content ol {
@@ -61,12 +68,11 @@ span.japanese-font {
 }
 
 .post-common-content blockquote {
-    font-style: italic;
-    line-height: 32px;
+    font-style: normal;
+    line-height: 24px;
     background-color: #F9F8FD;
-    border-left: 2px solid #3eb0ef;
-    margin-left: 8px;
-    padding-left: 14px;
+    border-left: 2px solid #FF7F50;
+    padding: 12px;
 }
 
 .post-common-content em {
