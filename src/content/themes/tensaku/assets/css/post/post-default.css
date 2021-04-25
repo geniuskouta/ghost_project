@@ -11,6 +11,8 @@ h1, h2, h3, strong {
 h1 {
     font-size: 24px;
     line-height: 32px;
+    border-left: 4px solid #FF7F50;
+    padding-left: 12px;
 }
 
 h2 {
@@ -23,7 +25,7 @@ h3 {
     line-height: 24px;
 }
 
-.post-common-content *:nth-child(n + 2) {
+.post-common-content, .post-common-content *:nth-child(n + 2) {
     margin-top: 12px;
 }
 
@@ -37,6 +39,36 @@ pre {
     overflow: auto;
 }
 
-pre::-webkit-scrollbar {
-    display: none;
+.japanese-font {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+}
+
+span.japanese-font {
+    display: inline-block;
+}
+
+.post-common-content ul, .post-common-content ol {
+    padding-left: 24px;
+}
+
+.post-common-content ul {
+    list-style: initial;
+}
+
+.post-common-content ol {
+    list-style: revert;
+}
+
+.post-common-content blockquote {
+    font-style: italic;
+    line-height: 32px;
+    background-color: #F9F8FD;
+    border-left: 2px solid #3eb0ef;
+    margin-left: 8px;
+    padding-left: 14px;
+}
+
+.post-common-content em {
+    font-style: italic;
 }
