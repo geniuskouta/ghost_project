@@ -11,12 +11,17 @@ h1, h2, h3, strong {
 
 h1 {
     font-size: 24px;
+    font-family: Nunito Sans, sans-serif;
     line-height: 32px;
     text-align: center;
 }
 
 h1 + .post-common-content {
     margin-top: 24px;
+}
+
+.post-common-content {
+    font-family: Nunito Sans, sans-serif;
 }
 
 .post-common-content h2 {
