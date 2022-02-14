@@ -65,16 +65,18 @@ body {
         top: 0;
         right: 0;
         display: none;
-        width: 192px;
+        width: 228px;
         height: 100%;
         padding: 12px 12px 12px 24px;
         box-shadow: -2px 0 6px rgba(0, 0, 0, 0.16);
-        transition: 0.2s;
+        transform: translateX(228px);
+        transition: transform 0.2s;
         box-sizing: border-box;
     }
 
     .campaign-header-nav-shown {
-        display: block;
+        /* slide effect */
+        transform: translateX(0);
     }
 }
 
