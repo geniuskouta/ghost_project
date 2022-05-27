@@ -4,9 +4,15 @@
     class="common-footer-menu-items common-footer-menu-items-hidden">
         <!-- Loop through the navigation items -->
         {{#foreach navigation}}
-        <li class="common-footer-menu-item {{#if current}} nav-current{{/if}}">
-            <a class="common-footer-menu-item-link" href="{{url absolute="true"}}">{{label}}</a>
-        </li>
+            {{#if current}}
+                <li class="common-footer-menu-item nav-current">
+                    <span class="common-footer-menu-item-link">{{label}}</span>
+                </li>
+                {{else}}
+                <li class="common-footer-menu-item">
+                    <a class="common-footer-menu-item-link" href="{{url absolute="true"}}">{{label}}</a>
+                </li>
+            {{/if}}
         {{/foreach}}
         <!-- End the loop -->
     </ul>
