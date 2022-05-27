@@ -3,7 +3,12 @@ routes:
 collections:
   /blog/:
     permalink: /blog/{slug}/
-    template: index
+    template: writing-topics
+    filter: tag:writing-topics
+  /vocabs/:
+    permalink: /vocabs/{slug}/
+    template: vocabs
+    filter: tag:vocabs
 
 taxonomies:
   tag: /tag/{slug}/
